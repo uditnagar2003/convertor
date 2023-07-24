@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#4ab0f3">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+
+        android:text="Temperature"
+        android:textSize="40sp"
+
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="76dp"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:ems="5"
+
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+         android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintStart_toEndOf="@+id/sd"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:backgroundTint="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/sd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="@color/white"
+        android:cursorVisible="true"
+android:textSize="40dp"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sd" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/sd2"
+        app:layout_constraintTop_toBottomOf="@+id/sd" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="123dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="152dp"
+        android:background="@color/white"
+        android:text="convert"
+
+        android:textColor="#4ab0f3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+</android.support.constraint.ConstraintLayout>

@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                         return ((n - 32) * 5) / 9;
                     }
                     if (j .equalsIgnoreCase("Kelvin")) {
-                        return ((n - 32) * (5 / 9)) + 273;
+                        return (((n - 32) * 5) / 9) + 273;
                     }
                 } else if (i .equalsIgnoreCase("Kelvin")) {
                     if (j .equalsIgnoreCase("Celsius")) {
